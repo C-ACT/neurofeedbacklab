@@ -1,3 +1,6 @@
+#Pilot Code
+See Folder for adaptations for EGI Amp Server and full experiment structure based on (Brandmeyer T, Delorme A. 2020). The following information is copied below. Instructions for EGI Amp Server compatibility usage is in the works.
+
 # Neurofeedbacklab
 
 Neurofeedbacklab is a neurofeedback software approach based on Matlab. It uses EEGLAB and a collection of EEGLAB plugins to provide state of the art artifact rejection and real-time source localization and connectivity analysis. Feedback is performed by the Matlab psychophysics toolbox (an example is provided). The Neurofeedbacklab real-time computing engine has been thoroughly tested against EEGLAB processing pipelines (see below).
