@@ -1,4 +1,4 @@
-#Pilot Code
+# Pilot Code
 See Folder for adaptations for EGI Amp Server and full experiment structure based on (Brandmeyer T, Delorme A. 2020). The following information is copied below. Instructions for EGI Amp Server compatibility usage is in the works.
 
 # Neurofeedbacklab
