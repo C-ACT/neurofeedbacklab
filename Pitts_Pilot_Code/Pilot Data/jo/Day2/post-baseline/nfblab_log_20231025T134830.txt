@@ -1,0 +1,157 @@
+load('jo_ws10_25_23_5.mat')
+load('data_nfblab_2023-10-25_13-34.mat')
+prev = dynRange
+
+prev =
+
+   59.1523   64.5482
+
+load('data_nfblab_2023-10-25_13-04.mat')
+load('data_nfblab_2023-10-25_13-14.mat')
+load('jo_ws10_25_23_0.mat')
+
+--------------------------------------------------------------------------------
+           Illegal instruction detected at 2023-10-25 14:00:06 -0400
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  Graphics Driver          : Intel Inc. Intel(R) Iris(TM) Plus Graphics OpenGL Engine Version 2.1 INTEL-20.6.4
+  Graphics Text Issue Info : xmin=-26.750000, ymin=0.000000, xmax=26.750000, ymax=14.500000
+  Java Version             : Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : maci64
+  MATLAB Entitlement ID    : 1494643
+  MATLAB Root              : /Applications/MATLAB_R2022b.app
+  MATLAB Version           : 9.13.0.2049777 (R2022b)
+  OpenGL                   : hardware
+  Operating System         : Mac OS Version 13.5.2 (Build 22G91)
+  Process ID               : 1945
+  Processor ID             : x86 Family 6 Model 126 Stepping 5, GenuineIntel
+  Session Key              : 3d927faf-dd28-4c15-86bb-80d5e9ed53e9
+  Window System            : Quartz
+
+Fault Count: 1
+
+
+Abnormal termination:
+Illegal instruction
+
+Current Thread: 'PTB mainthread' id 0x70000ed20000
+
+Register State (from fault):
+  RAX = 0000000015a71f18  RBX = 0000000001050002
+  RCX = 00007ff816f87b9f  RDX = 000000000000ff03
+  RSP = 000070000ed1b3e8  RBP = 000070000ed1b420
+  RSI = 00007fc726e99790  RDI = 0000000015a71f18
+
+   R8 = 0000000000000066   R9 = 0000000000000065
+  R10 = 0000000000000000  R11 = 0000000000000246
+  R12 = 0000000000050000  R13 = 000000000000ff03
+  R14 = 0000000000000000  R15 = 00007fc726e99790
+
+  RIP = 00007ff816f873d2  RFL = 0000000000010206
+
+   CS = 000000000000002b   FS = 0000000000000000   GS = 0000000000000000
+
+Stack Trace (from fault):
+[  0] 0x0000000104f7ab94 /Applications/MATLAB_R2022b.app/bin/maci64/libmwfl.dylib+00007060 _ZN10foundation4core4diag15stacktrace_base7captureERKNS1_14thread_contextEm+00000052
+[  1] 0x0000000104f7f05a /Applications/MATLAB_R2022b.app/bin/maci64/libmwfl.dylib+00024666 _ZN10foundation4core4test17terminate_handledERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE+00006778
+[  2] 0x0000000104f7d2e5 /Applications/MATLAB_R2022b.app/bin/maci64/libmwfl.dylib+00017125 _ZN10foundation4core4diag13terminate_logEPKcPK17__darwin_ucontext+00000149
+[  3] 0x000000010d0b73fc /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00521212 _Z19mnPrintErrorMessageRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+00011884
+[  4] 0x000000010d0b5483 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00513155 _Z19mnPrintErrorMessageRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+00003827
+[  5] 0x000000010d0b2d35 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00503093 mnFatalSignalHandler+00000149
+[  6] 0x00007ff816f835ed           /usr/lib/system/libsystem_platform.dylib+00013805 _sigtramp+00000029
+[  7] 0x0000000000000001                                   <unknown-module>+00000000
+[  8] 0x00007ff816f52101            /usr/lib/system/libsystem_pthread.dylib+00008449 pthread_mutex_destroy+00000047
+[  9] 0x00007ff816e95355                            /usr/lib/libc++.1.dylib+00066389 _ZNSt3__15mutexD1Ev+00000009
+[ 10] 0x000000019caae2fe /Users/samanthapitts/Documents/MATLAB/liblsl-Matlab/bin/liblsl.dylib+00172798 lsl_smoothing_halftime+00001902
+[ 11] 0x000000019caab613 /Users/samanthapitts/Documents/MATLAB/liblsl-Matlab/bin/liblsl.dylib+00161299 lsl_destroy_inlet+00000019
+[ 12] 0x000000010ebc3851 /Applications/MATLAB_R2022b.app/bin/maci64/libmex.dylib+00378961 _ZNK18C_DispatchStrategy8dispatchEiPP11mxArray_tagiS2_+00000305
+[ 13] 0x000000010ebc3770 /Applications/MATLAB_R2022b.app/bin/maci64/libmex.dylib+00378736 _ZNK18C_DispatchStrategy8dispatchEiPP11mxArray_tagiS2_+00000080
+[ 14] 0x000000010ebc415d /Applications/MATLAB_R2022b.app/bin/maci64/libmex.dylib+00381277 _ZNK24SCCompatDispatchStrategy8dispatchEiPP11mxArray_tagiS2_+00000061
+[ 15] 0x000000010ebc35d6 /Applications/MATLAB_R2022b.app/bin/maci64/libmex.dylib+00378326 _ZN7Mfh_mex30dispatch_file_with_protectionsEiPP11mxArray_tagiS2_+00000470
+[ 16] 0x000000010ebaaae6 /Applications/MATLAB_R2022b.app/bin/maci64/libmex.dylib+00277222 _ZN7Mfh_mex13dispatch_fileEiPP11mxArray_tagiS2_+00000150
+[ 17] 0x000000010d395173 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_dispatcher.dylib+00762227 _ZN8Mfh_file8dispatchEiPNSt3__110unique_ptrI11mxArray_tagN6matrix6detail17mxDestroy_deleterEEEiPPS2_+00000387
+[ 18] 0x000000010f9077d6 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00501718 _ZN9MathWorks3lxe13LxeDispatcher12apply_handleEP13Mfh_MATLAB_fnmPNS0_6xvalueEmPKS4_RKNS0_12LxeTypesBaseENS0_9ApplyTypeE+00001206
+[ 19] 0x00000001138b2ea0 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+05615264 _ZN9MathWorks3lxe16ans_apply_handleEPvNS_2ts4TypeEPKvS1_S1_+00000256
+[ 20] 0x00000001137e450e /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+04769038 _ZN9MathWorks3lxe38cpp_primitive_template_fn_with_contextIXadL_ZNS0_16ans_apply_handleEPvNS_2ts4TypeEPKvS2_S2_EEEEbS2_S4_S6_S2_S2_+00000014
+[ 21] 0x00000001136e5ab7 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+03726007 callPrimitiveWrapper+00000263
+[ 22] 0x00000001136c8a30 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+03607088 _ZN9MathWorks3lxe15ExecutionDriver9ThreadRunEv+00000448
+[ 23] 0x00000001136cf09e /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+03633310 _ZN9MathWorks3lxe12IrEngineImpl5ApplyERKN2ir4termEPvS6_+00000302
+[ 24] 0x000000010fa4c175 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+01831285 _ZN9MathWorks3lxe17IrEngineDecorator5ApplyERKN2ir4termEPvS6_+00000101
+[ 25] 0x000000010f8fe0d3 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00463059 _ZN9MathWorks3lxe27FileBasedMatlabCodeFunction16DispatchFunctionEiPP11mxArray_tagiS4_+00001267
+[ 26] 0x000000010f8fec71 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00466033 _ZN9MathWorks3lxe27FileBasedMatlabCodeFunction12DispatchFileEiPP11mxArray_tagiS4_b+00000145
+[ 27] 0x000000010d394a1b /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_dispatcher.dylib+00760347 _ZN8Mfh_file8dispatchEiPP11mxArray_tagiS2_+00000267
+[ 28] 0x0000000123e2594c /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+02505036 _ZN4mcos26invokeMMethodWithReuseFlagEPNS_13COSMethodInfoEbPKNS_9COSClientERiPNS_8COSValueEiPKS6_+00000764
+[ 29] 0x0000000123e3957c /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+02585980 _ZN4mcos51issueErrorForIncorrectAssignmentToEnumTypedPropertyEmPNS_9MPropInfoEPKc+00023676
+[ 30] 0x0000000123ca6f93 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+00937875 _ZN4mcos22ClassDefinitionManager20callCachedDestructorENS_15COSInterfacePtrE+00000195
+[ 31] 0x0000000123c18ea5 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+00356005 _ZN4mcos9COSClassI14callDestructorENS_15COSInterfacePtrE+00000181
+[ 32] 0x0000000123caf9dd /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+00973277 _ZN4mcos22ClassDefinitionManager15destroyInstanceEPNS_12COSInterfaceE+00000093
+[ 33] 0x0000000123c80802 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+00780290 _ZN4mcos13COSInterfaceI7destroyEPKNS_9COSClientE+00000290
+[ 34] 0x0000000123c811a5 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+00782757 _ZN4mcos13COSInterfaceI10destroyRefEv+00000149
+[ 35] 0x000000010919722f /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos.dylib+00037423 _ZN4mcos15COSInterfacePtr7releaseEv+00000111
+[ 36] 0x0000000123e5d735 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcos_impl.dylib+02733877 _Z24omDestroyElementListenerPvPK11mxArray_tag+00000197
+[ 37] 0x0000000105e8c414 /Applications/MATLAB_R2022b.app/bin/maci64/libmx.dylib+00091156 _ZN6matrix6detail23do_create_uninitnumericEN9cppcompat6detail4span4spanIKmLm18446744073709551615EEE9mxClassID12mxComplexity+00002548
+[ 38] 0x0000000105e8d5e2 /Applications/MATLAB_R2022b.app/bin/maci64/libmx.dylib+00095714 _ZN6matrix12destroyArrayEP11mxArray_tag+00003954
+[ 39] 0x0000000105e8c6d9 /Applications/MATLAB_R2022b.app/bin/maci64/libmx.dylib+00091865 _ZN6matrix12destroyArrayEP11mxArray_tag+00000105
+[ 40] 0x000000010fa30359 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+01717081 _ZN9MathWorks3lxe9LxeBridge27TempMatrixToPermanentMatrixEP11mxArray_tagPKcb+00000761
+[ 41] 0x0000000193f9a221 /Applications/MATLAB_R2022b.app/bin/maci64/libmwsaveload.dylib+00057889 _ZN7LoadMAT32validateArrayAndPutIntoWorkspaceEP11mxArray_tagRKNSt3__112basic_stringIDsNS2_11char_traitsIDsEENS2_9allocatorIDsEEEEPKcmP15LoadDestination+00000369
+[ 42] 0x0000000193f992a5 /Applications/MATLAB_R2022b.app/bin/maci64/libmwsaveload.dylib+00053925 _ZN7LoadMAT17loadEntireMatFileERKNSt3__112basic_stringIDsNS0_11char_traitsIDsEENS0_9allocatorIDsEEEEP15LoadDestination+00000117
+[ 43] 0x0000000193fc2248 /Applications/MATLAB_R2022b.app/bin/maci64/libmwsaveload.dylib+00221768 _Z21inSetDefaultSaveLevelPKci+00008072
+[ 44] 0x0000000193fb9955 /Applications/MATLAB_R2022b.app/bin/maci64/libmwsaveload.dylib+00186709 _Z13inFullLoadFcniPP11mxArray_tagiS1_+00006037
+[ 45] 0x0000000193d413f9 /Applications/MATLAB_R2022b.app/bin/maci64/builtins/matlab_toolbox_iofun_builtins/mwsaveload_builtinimpl.dylib+00025593 _us_set_bundle_context_instance_com_mathworks_saveload_builtinimpl+00005753
+[ 46] 0x000000010dc90980 /Applications/MATLAB_R2022b.app/bin/maci64/libmwbuiltin.dylib+00051584 _ZNK9MathWorks7builtin10BuiltinFcn6invokeEiPP11mxArray_tagiS4_NS1_18VariantsToConsiderE+00000880
+[ 47] 0x000000010d2fbe3a /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_dispatcher.dylib+00134714 _ZN11Mfh_builtin11dispatch_mfEiPP11mxArray_tagiS2_RKN9MathWorks7builtin10BuiltinFcn18VariantsToConsiderE+00000170
+[ 48] 0x000000010d2fce88 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_dispatcher.dylib+00138888 _Z16md_is_fh_builtinPK13Mfh_MATLAB_fn+00000584
+[ 49] 0x000000010d2e0419 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_dispatcher.dylib+00021529 _ZN18Mfh_MATLAB_fn_impl8dispatchEiPNSt3__110unique_ptrI11mxArray_tagN6matrix6detail17mxDestroy_deleterEEEiPPS2_+00000313
+[ 50] 0x000000010f9077d6 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00501718 _ZN9MathWorks3lxe13LxeDispatcher12apply_handleEP13Mfh_MATLAB_fnmPNS0_6xvalueEmPKS4_RKNS0_12LxeTypesBaseENS0_9ApplyTypeE+00001206
+[ 51] 0x00000001138b2ea0 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+05615264 _ZN9MathWorks3lxe16ans_apply_handleEPvNS_2ts4TypeEPKvS1_S1_+00000256
+[ 52] 0x00000001137e450e /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+04769038 _ZN9MathWorks3lxe38cpp_primitive_template_fn_with_contextIXadL_ZNS0_16ans_apply_handleEPvNS_2ts4TypeEPKvS2_S2_EEEEbS2_S4_S6_S2_S2_+00000014
+[ 53] 0x000000011359c9cc /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02378188 _ZN9MathWorks3lxe13IrInterpreter17ApplyCppPrimitiveEPN2ir4termES4_RKNS_2ts4TypeES8_+00000588
+[ 54] 0x000000011359af95 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02371477 _ZN9MathWorks3lxe13IrInterpreter31process_application_of_constantEPN2ir4termE+00001429
+[ 55] 0x000000011359933c /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02364220 _ZN9MathWorks3lxe13IrInterpreter13applyConstantEPN2ir4termE+00000076
+[ 56] 0x00000001135ad6ab /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02447019 _ZN9MathWorks3lxe12IRTreeWalker11getNextIRPCENS0_9irpc_typeE+00000187
+[ 57] 0x0000000113599090 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02363536 _ZN9MathWorks3lxe13IrInterpreter9tree_walkERKNS0_9irpc_typeES4_+00000192
+[ 58] 0x0000000113598f7c /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+02363260 _ZN9MathWorks3lxe13IrInterpreter9InterpretEv+00000108
+[ 59] 0x00000001136c9e40 /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+03612224 _ZN9MathWorks3lxe15ExecutionDriver9ThreadRunEv+00005584
+[ 60] 0x00000001136cf09e /Applications/MATLAB_R2022b.app/bin/maci64/libmwm_lxe.dylib+03633310 _ZN9MathWorks3lxe12IrEngineImpl5ApplyERKN2ir4termEPvS6_+00000302
+[ 61] 0x000000010fa4c175 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+01831285 _ZN9MathWorks3lxe17IrEngineDecorator5ApplyERKN2ir4termEPvS6_+00000101
+[ 62] 0x000000010f95614a /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00823626 _ZN9MathWorks3lxe9Evaluator15ApplyStatementsERKNSt3__112basic_stringIDsNS2_11char_traitsIDsEENS2_9allocatorIDsEEEERKN2ir4termERNS0_18IEvaluationContextE+00000602
+[ 63] 0x000000010f959e28 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+00839208 _ZN9MathWorks3lxe9Evaluator17EvalStatementImplERKNSt3__112basic_stringIDsNS2_11char_traitsIDsEENS2_9allocatorIDsEEEERNS0_18IEvaluationContextE+00000408
+[ 64] 0x000000010f9fff3e /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+01519422 _ZN9MathWorks3lxe9LxeBridge7EvalCmdERKNSt3__112basic_stringIDsNS2_11char_traitsIDsEENS2_9allocatorIDsEEEEbNS0_10EvalSourceE+00000318
+[ 65] 0x000000010f9ffdb5 /Applications/MATLAB_R2022b.app/bin/maci64/libmwlxemainservices.dylib+01519029 _ZN9MathWorks3lxe9LxeBridge22EvalCmdWithLocalReturnERKNSt3__112basic_stringIDsNS2_11char_traitsIDsEENS2_9allocatorIDsEEEEPibNS0_10EvalSourceE+00000053
+[ 66] 0x000000010ce631ff /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00520703 _ZN3iqm14UserEvalPlugin7executeEP15inWorkSpace_tag+00000607
+[ 67] 0x000000013e8cee0a /Applications/MATLAB_R2022b.app/bin/maci64/libnativejmi.dylib+00101898 _ZN9nativejmi17JmiUserEvalPlugin7executeEP15inWorkSpace_tag+00000026
+[ 68] 0x000000010ce3a5c6 /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00353734 _ZN3iqm17DefaultPacketInfo7executeEP15inWorkSpace_tagRKN7mwboost10shared_ptrINS_22IntermediatePacketInfoEEEN6mlutil14cmddistributor13WhenToDequeue13WhenToDequeueE+00001382
+[ 69] 0x000000010cdefc6e /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00048238 _ZN3iqm10DefaultIqm7dequeueERKN7mwboost8optionalIKP15inWorkSpace_tagEEN14cmddistributor11IqmStreamIDERKNS1_9function2IN6mlutil14cmddistributor17inExecutionStatusERKNSt3__112basic_stringIDsNSF_11char_traitsIDsEENSF_9allocatorIDsEEEES5_EE+00003918
+[ 70] 0x000000010e4f27da /Applications/MATLAB_R2022b.app/bin/maci64/libmwbridge.dylib+00059354 _Z10ioReadLinebP7__sFILERKN7mwboost8optionalIKP15inWorkSpace_tagEEbRbRKNS1_9function2IN6mlutil14cmddistributor17inExecutionStatusERKNSt3__112basic_stringIDsNSE_11char_traitsIDsEENSE_9allocatorIDsEEEES5_EE+00000218
+[ 71] 0x000000010e511672 /Applications/MATLAB_R2022b.app/bin/maci64/libmwbridge.dylib+00185970 _Z22mnGetCommandLineBufferbRbN7mwboost8optionalIKP15inWorkSpace_tagEEbRKNS0_9function2IN6mlutil14cmddistributor17inExecutionStatusERKNSt3__112basic_stringIDsNSA_11char_traitsIDsEENSA_9allocatorIDsEEEES4_EE+00000274
+[ 72] 0x000000010e511c1a /Applications/MATLAB_R2022b.app/bin/maci64/libmwbridge.dylib+00187418 _Z8mnParserv+00000362
+[ 73] 0x000000010d075098 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00250008 _ZN3mcr7runtime13initializeIqmERKN6mlutil10contextmgr5McrIDE+00002296
+[ 74] 0x000000010d059375 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00136053 _ZN14cmddistributor15PackagedTaskIIP13getTypeStringIvEENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEv+00000869
+[ 75] 0x000000010d05929b /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00135835 _ZN14cmddistributor15PackagedTaskIIP13getTypeStringIvEENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEv+00000651
+[ 76] 0x000000010ce5e7ca /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00501706 _ZN3iqm18PackagedTaskPlugin7executeEP15inWorkSpace_tag+00000074
+[ 77] 0x000000010d0727a7 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00239527 _Z15mcr_initialize0PKDsPS0_RKN7mwboost10shared_ptrIN10foundation7msg_svc8eventmgr8EventMgrEEEN6mlutil10contextmgr5MvmIDE+00019799
+[ 78] 0x000000010ce3a5c6 /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00353734 _ZN3iqm17DefaultPacketInfo7executeEP15inWorkSpace_tagRKN7mwboost10shared_ptrINS_22IntermediatePacketInfoEEEN6mlutil14cmddistributor13WhenToDequeue13WhenToDequeueE+00001382
+[ 79] 0x000000010cdfe533 /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00107827 _ZN3iqm10DefaultIqm13dequeueHelperEN7mwboost8optionalImEERKNSt3__112basic_stringIDsNS4_11char_traitsIDsEENS4_9allocatorIDsEEEEN6mlutil14cmddistributor13WhenToDequeue13WhenToDequeueERKNS4_8functionIFbRKNS4_5tupleIJSG_NS1_10shared_ptrINS_22IntermediatePacketInfoEEESA_SA_NS4_10shared_ptrIN14cmddistributor16CoalesceableDataEEEEEEEEE+00001315
+[ 80] 0x000000010cdf1442 /Applications/MATLAB_R2022b.app/bin/maci64/libmwiqm.dylib+00054338 _ZN3iqm10DefaultIqm7dequeueEN6mlutil14cmddistributor13WhenToDequeue13WhenToDequeueEN7mwboost8optionalImEE+00000434
+[ 81] 0x000000010d06327e /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00176766 _ZN3mcr7runtime22InterpreterThreadMulti14process_eventsEv+00000254
+[ 82] 0x000000010d063ada /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00178906 _ZN3mcr7runtime22InterpreterThreadMulti10threadMainENSt3__18functionIFvvEEENS2_7promiseIvEE+00000394
+[ 83] 0x000000010d064e61 /Applications/MATLAB_R2022b.app/bin/maci64/libmwmcr.dylib+00183905 _ZN3mcr7runtime22InterpreterThreadMulti10threadMainENSt3__18functionIFvvEEENS2_7promiseIvEE+00005393
+[ 84] 0x0000000104777ba8 /Applications/MATLAB_R2022b.app/bin/maci64/libmwboost_thread.dylib+00011176 _ZN7mwboost6thread21start_thread_noexceptEv+00000312
+[ 85] 0x00007ff816f561d3            /usr/lib/system/libsystem_pthread.dylib+00025043 _pthread_start+00000125
+[ 86] 0x00007ff816f51bd3            /usr/lib/system/libsystem_pthread.dylib+00007123 thread_start+00000015
+
+
+This error was detected while a MEX-file was running. If the MEX-file
+is not an official MathWorks function, please examine its source code
+for errors. Please consult the External Interfaces Guide for information
+on debugging MEX-files.
+** This crash report has been saved to disk as /Users/samanthapitts/matlab_crash_dump.1945-1 **
+
+
+
+MATLAB is exiting because of fatal error
